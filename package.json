@@ -1,0 +1,24 @@
+{
+  "name": "goit-js-hw-11-color-switch",
+  "version": "1.0.0",
+  "description": "hw-11.1",
+  "main": "index.js",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sergeevi44/goit-js-hw-11-color-switch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sergeevi44/goit-js-hw-11-color-switch/issues"
+  },
+  "homepage": "https://github.com/Sergeevi44/goit-js-hw-11-color-switch#readme"
+}
