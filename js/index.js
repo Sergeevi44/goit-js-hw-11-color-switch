@@ -1,4 +1,3 @@
-import styles from '../styles.css'
 
 const colors = [
   '#FFFFFF',
@@ -17,17 +16,20 @@ const body = document.querySelector('body');
 const start = document.querySelector('[data-action="start"]');
 const stop = document.querySelector('[data-action="stop"]');
 
-start.addEventListener('click', changeBodyColor);
-stop.addEventListener('click', stopChangeBodyColor);
-
-const changeBodyColor = setInterval(() => {
+function changeBodyColor(){
 	const color = randomIntegerFromInterval(0, 5);
 	body.style.backgroundColor = colors[color];
 	start.setAttribute('disabled', 'true');
-}, 1000);
-
+	const change = setInterval(changeBodyColor, 1000);
+	
 const stopChangeBodyColor = function () {
-	clearInterval(changeBodyColor);
-	start.setAttribute('disabled', 'false');
+	clearInterval(change);
+	start.removeAttribute('disabled');
+	}
+	stop.addEventListener('click', stopChangeBodyColor);
 }
+start.addEventListener('click', changeBodyColor);
+
+
+
 
