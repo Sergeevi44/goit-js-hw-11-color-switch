@@ -20,7 +20,7 @@ start.addEventListener('click', changeBodyColor);
 
 function changeBodyColor() {
 	const change = setInterval(() => {
-		const color = randomIntegerFromInterval(0, 5);
+		const color = randomIntegerFromInterval(0, colors.length-1);
 	body.style.backgroundColor = colors[color];
 	start.setAttribute('disabled', 'true');}, 1000);
 	const stopChangeBodyColor = function () {
